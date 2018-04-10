@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name">Colocapp</string>
-    <string name="title_activity_2">Activity2</string>
-    <string name="title_activity_3">Activity3</string>
-    <string name="title_activity_4">Activity4</string>
-    <string name="title_activity_5">Activity5</string>
-    <string name="title_activity_6">Activity6</string>
+    <string name="app_name">Roomies</string>
+    <string name="title_activity_2">Planning</string>
+    <string name="title_activity_3">Liste des courses</string>
+    <string name="title_activity_4">Dépenses</string>
+    <string name="title_activity_5">ScoreBoard</string>
+    <string name="title_activity_6">A propos</string>
+    <string name="label_welcome">Bienvenue dans Roomies !</string>
+    <string name="text_welcome">Cette application vous aidera à vous organiser.</string>
 </resources>
