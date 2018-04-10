@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Colocapp</string>
+    <string name="title_activity_2">Activity2</string>
+    <string name="title_activity_3">Activity3</string>
+    <string name="title_activity_4">Activity4</string>
+    <string name="title_activity_5">Activity5</string>
+    <string name="title_activity_6">Activity6</string>
+</resources>
