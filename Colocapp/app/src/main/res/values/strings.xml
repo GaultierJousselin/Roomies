@@ -6,6 +6,7 @@
     <string name="title_activity_5">ScoreBoard</string>
     <string name="title_activity_6">A propos</string>
     <string name="label_welcome">Bienvenue dans Roomies !</string>
+    <string name="text_welcome">Cette application vous aidera à vous organiser dans votre colocation.</string>
     <string name="text_welcome">Cette application vous aidera à vous organiser.</string>
     <string name="a5_button_add_personnes">Ajout</string>
     <string name="a5_button_add_point">+</string>
