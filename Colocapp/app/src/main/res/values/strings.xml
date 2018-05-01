@@ -14,4 +14,5 @@
     <string name="a5_text_name_entry">Nom :</string>
     <string name="a5_text_score">Score :</string>
     <string name="a5_text_edit">...</string>
+    <string name="a5_text_pseudo">Pseudo</string>
 </resources>
