@@ -36,7 +36,7 @@
         </activity>
         <activity
             android:name=".Activity4"
-            android:label="@string/title_activity_4"
+            android:label="@string/title_activity_5"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -45,7 +45,7 @@
         </activity>
         <activity
             android:name=".Activity5"
-            android:label="@string/title_activity_5"
+            android:label="@string/title_activity_4"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
