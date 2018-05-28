@@ -68,6 +68,7 @@ public class Activity4 extends AppCompatActivity {
             }
         });
 
+        //Premier
         String m_name = "Quentin";
         final TextView m_ID_name_text = (TextView) findViewById(R.id.textView1_name);
         Button addPoint = (Button) findViewById(R.id.button1_plus);
@@ -76,13 +77,57 @@ public class Activity4 extends AppCompatActivity {
         int m_ID_button_plus =  R.id.button1_plus;
         int m_ID_button_delete = R.id.button1_delete;
         final int m_ID_button_points = R.id.textView1_points;
-        final int[] m_points = {0};
-        final Boolean[] m_inuse = {false};
+        final int[] m_points_1 = {0};
+        final Boolean[] m_inuse_1 = {false};
+        final TextView disp_point = (TextView) findViewById(R.id.textView1_points);
+        disp_point.setText("0");
+
+        //Deuxième
+        //String m_name = "Gaultier";
+        final TextView m_ID_name_text_2 = (TextView) findViewById(R.id.textView2_name);
+        Button addPoint_2 = (Button) findViewById(R.id.button2_plus);
+        Button supPoint_2 = (Button) findViewById(R.id.button2_minus);
+        Button delPerso_2 = (Button) findViewById(R.id.button2_delete);
+        int m_ID_button_plus_2 =  R.id.button2_plus;
+        int m_ID_button_delete_2 = R.id.button2_delete;
+        final int m_ID_button_points_2 = R.id.textView2_points;
+        final int[] m_points_2 = {0};
+        final Boolean[] m_inuse_2 = {false};
+        final TextView disp_point_2 = (TextView) findViewById(R.id.textView2_points);
+        disp_point_2.setText("0");
+
+        //Troisieme
+       // String m_name = "Carl-Antoni";
+        final TextView m_ID_name_text_3 = (TextView) findViewById(R.id.textView3_name);
+        Button addPoint_3 = (Button) findViewById(R.id.button3_plus);
+        Button supPoint_3 = (Button) findViewById(R.id.button3_minus);
+        Button delPerso_3 = (Button) findViewById(R.id.button3_delete);
+        int m_ID_button_plus_3 =  R.id.button3_plus;
+        int m_ID_button_delete_3 = R.id.button3_delete;
+        final int m_ID_button_points_3 = R.id.textView3_points;
+        final int[] m_points_3 = {0};
+        final Boolean[] m_inuse_3 = {false};
+        final TextView disp_point_3 = (TextView) findViewById(R.id.textView3_points);
+        disp_point_3.setText("0");
+
+        //Quatrieme
+       // String m_name = "Cloutier";
+        final TextView m_ID_name_text_4 = (TextView) findViewById(R.id.textView4_name);
+        Button addPoint_4 = (Button) findViewById(R.id.button4_plus);
+        Button supPoint_4 = (Button) findViewById(R.id.button4_minus);
+        Button delPerso_4 = (Button) findViewById(R.id.button4_delete);
+        int m_ID_button_plus_4 =  R.id.button4_plus;
+        int m_ID_button_delete_4 = R.id.button4_delete;
+        final int m_ID_button_points_4 = R.id.textView4_points;
+        final int[] m_points_4 = {0};
+        final Boolean[] m_inuse_4 = {false};
+        final TextView disp_point_4 = (TextView) findViewById(R.id.textView4_points);
+        disp_point_4.setText("0");
+
 
         final EditText entry = (EditText) findViewById(R.id.editText);
 
-        final TextView disp_point = (TextView) findViewById(R.id.textView1_points);
-        disp_point.setText("0");
+
 
 
 
@@ -90,18 +135,39 @@ public class Activity4 extends AppCompatActivity {
 
         b.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View v) {
-                m_ID_name_text.setText(entry.getText());
-                m_inuse[0] = true;
+
+                if(!m_inuse_1[0]){
+                    m_ID_name_text.setText(entry.getText());
+                    m_inuse_1[0] = true;
+                }
+                else if(!m_inuse_2[0]){
+                    m_ID_name_text_2.setText(entry.getText());
+                    m_inuse_2[0] = true;
+                }
+                else if(!m_inuse_3[0]){
+                    m_ID_name_text_3.setText(entry.getText());
+                    m_inuse_3[0] = true;
+                }
+                else if(!m_inuse_4[0]){
+                    m_ID_name_text_4.setText(entry.getText());
+                    m_inuse_4[0] = true;
+                }
+
+                //m_ID_name_text.setText(entry.getText());
+                //m_inuse_1[0] = true;
             }
         });
 
+
+        ///1
         addPoint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(m_inuse[0]) {
-                    m_points[0] = m_points[0] + 1;
-                    String s_point = Integer.toString(m_points[0]);
+                if(m_inuse_1[0]) {
+                    m_points_1[0] = m_points_1[0] + 1;
+                    String s_point = Integer.toString(m_points_1[0]);
                     disp_point.setText(s_point);
                 }
             }
@@ -109,9 +175,9 @@ public class Activity4 extends AppCompatActivity {
         supPoint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(m_inuse[0]) {
-                    m_points[0] = m_points[0] - 1;
-                    String s_point = Integer.toString(m_points[0]);
+                if(m_inuse_1[0]) {
+                    m_points_1[0] = m_points_1[0] - 1;
+                    String s_point = Integer.toString(m_points_1[0]);
                     disp_point.setText(s_point);
                 }
             }
@@ -120,15 +186,113 @@ public class Activity4 extends AppCompatActivity {
         delPerso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                m_points[0] = 0;
-                String s_point = Integer.toString(m_points[0]);
+                m_points_1[0] = 0;
+                String s_point = Integer.toString(m_points_1[0]);
                 disp_point.setText(s_point);
                 m_ID_name_text.setText("Pseudo");
-                m_inuse[0] = false;
+                m_inuse_1[0] = false;
             }
         });
 
+        ///2
 
+        addPoint_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(m_inuse_2[0]) {
+                    m_points_2[0] = m_points_2[0] + 1;
+                    String s_point = Integer.toString(m_points_2[0]);
+                    disp_point_2.setText(s_point);
+                }
+            }
+        });
+        supPoint_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(m_inuse_2[0]) {
+                    m_points_2[0] = m_points_2[0] - 1;
+                    String s_point = Integer.toString(m_points_2[0]);
+                    disp_point_2.setText(s_point);
+                }
+            }
+        });
+
+        delPerso_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                m_points_2[0] = 0;
+                String s_point = Integer.toString(m_points_2[0]);
+                disp_point_2.setText(s_point);
+                m_ID_name_text_2.setText("Pseudo");
+                m_inuse_2[0] = false;
+            }
+        });
+
+        ///3
+        addPoint_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(m_inuse_3[0]) {
+                    m_points_3[0] = m_points_3[0] + 1;
+                    String s_point = Integer.toString(m_points_3[0]);
+                    disp_point_3.setText(s_point);
+                }
+            }
+        });
+        supPoint_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(m_inuse_3[0]) {
+                    m_points_3[0] = m_points_3[0] - 1;
+                    String s_point = Integer.toString(m_points_3[0]);
+                    disp_point_3.setText(s_point);
+                }
+            }
+        });
+
+        delPerso_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                m_points_3[0] = 0;
+                String s_point = Integer.toString(m_points_3[0]);
+                disp_point_3.setText(s_point);
+                m_ID_name_text_3.setText("Pseudo");
+                m_inuse_3[0] = false;
+            }
+        });
+
+        ///4
+        addPoint_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(m_inuse_4[0]) {
+                    m_points_4[0] = m_points_4[0] + 1;
+                    String s_point = Integer.toString(m_points_4[0]);
+                    disp_point_4.setText(s_point);
+                }
+            }
+        });
+        supPoint_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(m_inuse_4[0]) {
+                    m_points_4[0] = m_points_4[0] - 1;
+                    String s_point = Integer.toString(m_points_4[0]);
+                    disp_point_4.setText(s_point);
+                }
+            }
+        });
+
+        delPerso_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                m_points_4[0] = 0;
+                String s_point = Integer.toString(m_points_4[0]);
+                disp_point_4.setText(s_point);
+                m_ID_name_text_4.setText("Pseudo");
+                m_inuse_4[0] = false;
+            }
+        });
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
